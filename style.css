@@ -13,7 +13,7 @@ button{
 .red_dugmadi{
     width: 220px;
     height: 55px;
-
+    
     display: flex;
     flex-direction: row;
     align-items: stretch;
@@ -32,4 +32,56 @@ button{
 
 .dgm_p:hover{
     filter: brightness(130%);
+}
+
+#sakriven_red{
+    /* visibility: hidden; */
+    display: none;
+}
+
+.sakriven_div{
+    display: none;
+}
+
+#dgm_oceni{
+    display: none;
+}
+
+#nova-kombinacija{
+    display: block;
+}
+
+.red{
+    margin-bottom: 4px;
+}
+
+.flex-red{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center;     */
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokusaj-pamcenje{
+    border: 2px solid gray;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.resenje-pamcenje{
+    background-color: #777777;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
 }

@@ -4,8 +4,29 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <title>Mastermind</title>
     </head>
-    <body>
-        <div class="red_dugmadi">
+    <body onload="ispisi()">
+        <div id="igra">
+            <div id="prethodni-pokusaji">
+            <!-- 
+                <div class="red flex-red">
+                    <div class="pokusaj flex-red">
+                        <div class="pokusaj-pamcenje"></div>
+                        <div class="pokusaj-pamcenje"></div>
+                        <div class="pokusaj-pamcenje"></div>
+                        <div class="pokusaj-pamcenje"></div>
+                    </div>
+                    <div class="resenje flex-red">
+                        <div class="resenje-pamcenje"></div>
+                        <div class="resenje-pamcenje"></div>
+                        <div class="resenje-pamcenje"></div>
+                        <div class="resenje-pamcenje"></div>
+                    </div>
+                </div> 
+            -->
+            </div>
+        </div>        
+
+        <div class="red_dugmadi" id="sakriven_red">
             <div id="dgm_k1" class="dgm_k"></div>
             <div id="dgm_k2" class="dgm_k"></div>
             <div id="dgm_k3" class="dgm_k"></div>
@@ -18,8 +39,11 @@
             <div id="dgm_p4" class="dgm_p"></div>
         </div>
 
-        <div id="kombinacija">
+        <div id="kombinacija" class="sakriven_div">
             -----
+        </div>
+        <div id="preostali_pokusaji">
+            Preostali broj pokusaja: 
         </div>
         <div id="crni">
             Crni:
@@ -29,6 +53,9 @@
         </div>
         <button id="nova-kombinacija">
             NOVA KOMBINACIJA
+        </button>
+        <button id="dgm_oceni">
+            OCENJIVANJE
         </button>
         
         <script src="script.js"></script>
